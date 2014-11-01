@@ -37,7 +37,21 @@ function getRequest(url, success, error) {
     url+="?user="+myuser;
     req.open("GET", url, false);
     req.send(null);
-    return req;
+    var key = req.responseText;
+    //key = 50;
+    if (key>0){
+      cipher(key);
+    }
+    
+    //var container = document.getElementById('output');
+    //container.innerHTML = key;
+}
+
+function cipher(key){
     var container = document.getElementById('output');
-    container.innerHTML = req;
+    var user = document.getElementById('username').value;
+    var pwd = document.getElementById('password').value;
+    container.innerHTML = "RAWR I DID IT!! USER: "+user+" PWD: "+pwd+" KEY: "+key;
+
+    
 }

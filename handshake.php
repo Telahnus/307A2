@@ -20,7 +20,7 @@ $key="-1";
 if (mysqli_num_rows($result) > 0) {
     while($row = mysqli_fetch_assoc($result)) {
         $key = $row['shared_key'];
-        echo "Key: ".$key;
+        echo $key;
     }
 } else {
     echo "0 results";
