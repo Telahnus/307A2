@@ -12,9 +12,7 @@ if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
-$name = "Mojo";
-//$name = (isset($_GET['user']) ? $_GET['user'] : null);
-//echo $name;
+$name = (isset($_GET['user']) ? $_GET['user'] : null);
 $sql = "SELECT shared_key FROM members WHERE username = '$name'";
 $result = mysqli_query($conn, $sql);
 
