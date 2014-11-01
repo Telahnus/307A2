@@ -1,0 +1,84 @@
+/* login page */
+
+/* ----- font and icons ----- */
+
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+body{
+  font: 16px/1.5em 'Open Sans', sans-serif;
+	background: url("bkg.jpg") no-repeat;
+	background-size: cover;
+}
+
+input {
+  border: none;
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+
+/* ----- for links ----- */
+
+a {
+  color: #eee;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- LOGIN ---------- */
+
+#login {
+  margin: 50px auto;
+  width: 300px;
+}
+
+#login form span {
+  background-color: #363b41;
+  border-radius: 3px 0px 0px 3px;
+  color: #606468;
+  float: left;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  width: 50px;
+}
+
+#login form input {
+  height: 50px;
+}
+
+#login form input[type="text"], input[type="password"] {
+  background-color: #3b4148;
+  border-radius: 0px 3px 3px 0px;
+  color: #606468;
+  padding: 0 16px;
+  width: 200px;
+}
+
+#login form [type="button"] {
+  height: 50px;
+  border-radius: 3px;
+  border-width: 0px;
+  background-color: #FF9900;
+  color: #663300;
+  font-weight: bold;
+  margin-bottom: 2em;
+  width: 280px;
+}
+
+#login form [type="button"]:hover {
+  background-color: #FF6600;
+}
+
+#login > p {
+  text-align: center;
+}
+
+#login > p span {
+  padding-left: 5px;
+}
+  

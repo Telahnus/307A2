@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Login</title>
+	<link href="css/site.css" rel="stylesheet">
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <script src="test.js"></script>
+</head>
+
+<body>
+
+    <div id="login">
+        <form action="test.js" method="post">
+        	<!-- span section adds the little icons -->
+            <p><span class="fontawesome-user"></span><input type="text" id="username" name="username" onBlur="if(this.value == '') this.value = 'Username'" onFocus="if(this.value == 'Username') this.value = ''" required></p>
+            <p><span class="fontawesome-lock"></span><input type="password" name="password" onBlur="if(this.value == '') this.value = 'Password'" onFocus="if(this.value == 'Password') this.value = ''" required></p>
+            <p><button type="button" onclick="return getKey();"> SIGN IN </button></p>
+        </form>
+        <p>Not a member? <a href="">Sign up now</a><span class="fontawesome-arrow-right"></span></p>
+        <div id="output"></div>
+    </div>
+
+</body>
+
+</html> 
